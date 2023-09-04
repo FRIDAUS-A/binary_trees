@@ -1,5 +1,10 @@
 #include "binary_trees.h"
-
+/**
+ * binary_tree_node - create a new node
+ * @parent: address of the parent node
+ * @value: value in the node
+ * Return: Allow success
+ */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *node;
