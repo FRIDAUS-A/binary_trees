@@ -14,8 +14,8 @@ int binary_tree_is_full(const binary_tree_t *tree)
 
 	if (!tree)
 		return (0);
-	size = binary_tree_size_tmp(tree);
-	height = binary_tree_height_tmp(tree);
+	size = binary_tree_size(tree);
+	height = binary_tree_height(tree);
 	height = height + 1;
 
 	while (height > 0)
@@ -68,3 +68,4 @@ size_t binary_tree_height_tmp(const binary_tree_t *tree)
 
 	return (height_left > height_right ? height_left : height_right);
 }
+
